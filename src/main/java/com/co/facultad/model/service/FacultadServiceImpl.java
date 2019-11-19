@@ -29,9 +29,9 @@ public class FacultadServiceImpl implements FacultadService {
 
 	@Override
 	public Facultad save(Facultad facultad) throws Exception {
-		facultad = facultadRepository.findByName(facultad.getName());
+		Facultad facultadFind = facultadRepository.findByName(facultad.getName());
 		try {
-			if (null == facultad) {
+			if (null == facultadFind) {
 				facultadRepository.save(facultad);
 				return facultad;
 			} else {

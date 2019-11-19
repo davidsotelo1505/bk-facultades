@@ -39,7 +39,7 @@ public class FacultadController {
 		HttpStatus status = HttpStatus.OK;
 		try {
 
-			Facultad userSaved = facultadService.save(facultad);
+			Facultad facultadSaved = facultadService.save(facultad);
 			// response.setData(userSaved);
 			response.setSuccess(true);
 			response.setMessage("Facultad guardada exitosamente");
