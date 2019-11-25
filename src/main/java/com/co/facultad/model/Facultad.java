@@ -22,8 +22,8 @@ public class Facultad implements Serializable {
 	
 	@Id
 	@Column(name = "id", unique = true, nullable = false)
-	@SequenceGenerator(name = "user_seq", sequenceName = "user_seq", allocationSize = 1, initialValue = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
+	@SequenceGenerator(name = "facultad_seq", sequenceName = "facultad_seq", allocationSize = 1, initialValue = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "facultad_seq")
 	Long id;
 	@Column
 	String name;
